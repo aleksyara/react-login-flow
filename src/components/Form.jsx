@@ -18,6 +18,11 @@ function Form(props) {
         {!props.isRegistered && (
           <input type="password" placeholder="Confirm Password" />
         )}
+        {/* ^^^^   && like if/else statement but via expression ^^^^^^ */}
+        {/* {!props.isRegistered ? (
+          <input type="password" placeholder="Confirm Password" />
+        ) : null} */}
+
         <button type="submit">
           {props.isRegistered ? "Login" : "Register"}
         </button>
